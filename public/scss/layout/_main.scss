@@ -1,0 +1,41 @@
+@use "../abstract/variable" as v;
+@use "../abstract/mixins" as m;
+body {
+
+    }
+#banner{
+	background-image: url(/images/banner.jpeg);
+	background-position: center;
+	background-size: cover;
+	height: 400px;
+}
+#temoin{
+	width: 1000px;
+	height: auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.cercle{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	
+}
+.temoinpict{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background-color: white;
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 300px;
+	height: auto;
+	background-color:rgb(237, 235, 235) ;
+}
+

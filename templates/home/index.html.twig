@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+<section id="banner">
+    <h1>Bienvenue sur Kids Learning</h1>
+    <a href="">Découvrir</a>
+    <p>Aujourd'hui on est le {{ "now"|date("d/m/Y") }}</p>
+</section>
+    <h2>témoignages</h2>
+    <p>Découvrez ce que les gens disent de notre plateforme</p>
+
+    <article id="temoin">
+		<div class="container">
+			<div class="cercle">
+				<img class="temoinpict" src= {{asset("images/parent-1.jpeg")}} alt="">
+			</div>
+			<p>"Ma fille a beaucoup appris grâce à cette plateforme. Les cours sont très informatifs et faciles à comprendre."</p>
+			<h3>Thérèse Dupont</h3>
+		</div>
+			<div class="container">
+			<div class="cercle">
+				<img class="temoinpict" src= {{asset("images/parent-2.jpeg")}} alt="">
+			</div>
+			<p>"Une excellente ressource pour l'apprentissage en ligne, je la recommande à tout le monde !"</p>
+			<h3>Jean Curie</h3>
+		</div>
+			<div class="container">
+			<div class="cercle">
+				<img class="temoinpict" src= {{asset("images/parent-3.jpeg")}} alt="">
+			</div>
+			<p>"les ressources disponibles sont très utiles et variées. Une platefoorme indispensable pour l'éducation"</p>
+			<h3>Albert Dorne</h3>
+		</div>
+    </article>
+
+
+{% endblock %}

@@ -2,16 +2,39 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>">
+        <title>{% block title %}Accueil{% endblock %}</title>
         {% block stylesheets %}
+	   <link rel="stylesheet" href={{asset("css/style.css")}}>
         {% endblock %}
 
-        {% block javascripts %}
-            {% block importmap %}{{ importmap('app') }}{% endblock %}
-        {% endblock %}
     </head>
     <body>
+		{% block navbarr %}
+		<nav>
+			<div class="logo">
+				<img class="pict_nav" src={{asset("images/Logo.png")}} alt="logo">
+			</div>
+			<div class="container_link">
+				<ul>
+					<li><a href={{path("app_home")}}></a>Accueil</li>
+					<li><a href={{path("app_cours")}}></a>Cours</li>
+					<li><a href={{path("app_ressources")}}></a>Ressources</li>
+					<li><a href={{path("app_contact")}}></a>Contact</li>
+				</ul>
+			</div>
+		</nav>
+		{% endblock %}
         {% block body %}{% endblock %}
+
+	   {% block footer %}
+	   <h1>kids-learning</h1>
+	   <img src={{asset("images/Logo.png")}} alt="logo">
+	   <p>Nous sommes ici pour répondre à vos questions et inquiétudes.</p>
+	   <p>info@kids-learning.fr</p>
+	   <p>01 23 45 67 89</p>
+	   <p>Formulaire de contact</p>
+	   <p>&copy 2023 Kids-Learning.Tous droits réservés</p>
+	 
+	   {% endblock %}
     </body>
 </html>

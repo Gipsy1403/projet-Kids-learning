@@ -1,0 +1,22 @@
+@use "../abstract/variable" as v;
+@use "../abstract/mixins" as m;
+
+nav{
+	background-color: #2C3E50;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+a{
+	color: white;
+}
+.pict_nav{
+	width: 200px;
+}
+ul{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	
+}
