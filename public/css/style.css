@@ -8,6 +8,11 @@ nav {
 
 a {
   color: white;
+  padding: 1rem;
+}
+
+a.active {
+  color: #FF5757;
 }
 
 .pict_nav {
@@ -18,6 +23,30 @@ ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+body {
+  font-family: nunito;
+}
+@font-face {
+  font-family: mulish;
+  src: url(/font/Mulish/Mulish-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: mulitaliq;
+  src: url(/font/Mulish/Mulish-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: nunito;
+  src: url(/font/Nunito/Nunito-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: nunitaliq;
+  src: url(/font/Nunito/Nunito-Italic-VariableFont_wght.ttf);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: mulish;
 }
 
 #banner {
@@ -56,6 +85,25 @@ ul {
   width: 300px;
   height: auto;
   background-color: rgb(237, 235, 235);
+}
+.container p {
+  font-family: nunitaliq;
+  font-size: 0.8em;
+}
+
+.btn_decouvrir {
+  background-color: red;
+  color: white;
+  padding: 10px;
+}
+
+.footer {
+  background-color: #2C3E50;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 * {

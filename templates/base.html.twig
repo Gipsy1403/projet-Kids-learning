@@ -16,10 +16,10 @@
 			</div>
 			<div class="container_link">
 				<ul>
-					<li><a href={{path("app_home")}}></a>Accueil</li>
-					<li><a href={{path("app_cours")}}></a>Cours</li>
-					<li><a href={{path("app_ressources")}}></a>Ressources</li>
-					<li><a href={{path("app_contact")}}></a>Contact</li>
+					<li><a class="{% if app.request.attributes.get('_route') == 'app_home'%}active{% endif %}" href={{path("app_home")}}>Accueil</a></li>
+					<li><a class="{% if app.request.attributes.get('_route') == 'app_cours'%}active{% endif %}" href={{path("app_cours")}}>Cours</a></li>
+					<li ><a class="{% if app.request.attributes.get('_route') == 'app_ressources'%}active{% endif %}" href={{path("app_ressources")}}>Ressources</a></li>
+					<li ><a class="{% if app.request.attributes.get('_route') == 'app_contact'%}active{% endif %}" href={{path("app_contact")}}>Contact</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -27,14 +27,14 @@
         {% block body %}{% endblock %}
 
 	   {% block footer %}
-	   <h1>kids-learning</h1>
-	   <img src={{asset("images/Logo.png")}} alt="logo">
-	   <p>Nous sommes ici pour répondre à vos questions et inquiétudes.</p>
-	   <p>info@kids-learning.fr</p>
-	   <p>01 23 45 67 89</p>
-	   <p>Formulaire de contact</p>
-	   <p>&copy 2023 Kids-Learning.Tous droits réservés</p>
-	 
+	   <div class="footer">
+		<img class="pict_nav" src={{asset("images/Logo.png")}} alt="logo">
+		<p>Nous sommes ici pour répondre à vos questions et inquiétudes.</p>
+		<p>info@kids-learning.fr</p>
+		<p>01 23 45 67 89</p>
+		<p>Formulaire de contact</p>
+		<p>&copy 2023 Kids-Learning.Tous droits réservés</p>
+	</div>
 	   {% endblock %}
     </body>
 </html>

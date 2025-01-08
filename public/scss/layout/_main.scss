@@ -1,8 +1,27 @@
 @use "../abstract/variable" as v;
 @use "../abstract/mixins" as m;
 body {
-
-    }
+	@font-face {
+		font-family: mulish;
+		src: url(/font/Mulish/Mulish-VariableFont_wght.ttf);
+	}
+	@font-face {
+		font-family: mulitaliq;
+		src: url(/font/Mulish/Mulish-Italic-VariableFont_wght.ttf);
+	}
+	@font-face {
+		font-family: nunito;
+		src: url(/font/Nunito/Nunito-VariableFont_wght.ttf);
+	}
+	@font-face {
+		font-family: nunitaliq;
+		src: url(/font/Nunito/Nunito-Italic-VariableFont_wght.ttf);
+	}
+	font-family: nunito;
+	}
+h1, h2, h3, h4, h5, h6{
+	font-family: mulish;
+}
 #banner{
 	background-image: url(/images/banner.jpeg);
 	background-position: center;
@@ -37,5 +56,13 @@ body {
 	width: 300px;
 	height: auto;
 	background-color:rgb(237, 235, 235) ;
+	p{
+		font-family: nunitaliq;
+		font-size: 0.8em;
+	}
 }
-
+.btn_decouvrir{
+	background-color: red;
+	color: white;
+	padding: 10px;
+}

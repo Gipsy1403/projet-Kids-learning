@@ -1,7 +1,7 @@
 @use "../abstract/variable" as v;
 @use "../abstract/mixins" as m;
 
-nav{
+nav {
 	background-color: #2C3E50;
 	color: white;
 	display: flex;
@@ -10,7 +10,12 @@ nav{
 }
 a{
 	color: white;
+	padding: 1rem;
 }
+a.active{
+	color: #FF5757;
+}
+
 .pict_nav{
 	width: 200px;
 }
@@ -20,3 +25,4 @@ ul{
 	align-items: center;
 	
 }
+
